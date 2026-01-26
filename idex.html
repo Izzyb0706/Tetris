@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tetris with JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <canvas id="playfield" width="300" height="600"></canvas>
+
+    <div class="panel">
+      <h1>Tetris with JS</h1>
+      <div class="score" id="score">0</div>
+      <div class="small" id="level">Level: 1</div>
+
+      <div class="small">Your Next Piece is:</div>
+      <div class="next">
+        <canvas id="next" width="120" height="120"></canvas>
+      </div>
+
+      <div class="btns">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="controls">
+        Controls:
+        <br>← → : Move shape left or right
+        <br>↓ : Drop the shape faster
+        <br>P : Pause / Resume
+        <br>⬆ : Rotate the shape
+      </div>
+    </div>
+  </div>
+
+  <script src="tetris.js"></script>
+</body>
+</html>
